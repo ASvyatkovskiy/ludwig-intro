@@ -1,6 +1,8 @@
-# Ludwig? Who is Ludwig ?
+# Ludwig? Who is Ludwig 
 
-Hands-on introduction to Ludwig: materials for the reading group presentation. Ludwig is a Python tool for code-free deep learning. More details can be found on [Ludwig GitHub](https://github.com/uber/ludwig) and the [official Ludwig website](https://uber.github.io/ludwig/)
+Hands-on introduction to Ludwig: materials for the reading group presentation. 
+
+Ludwig is a Python tool for code-free deep learning. More details can be found on [Ludwig GitHub](https://github.com/uber/ludwig) and the [official Ludwig website](https://uber.github.io/ludwig/user_guide)
 
 # Getting started
 To follow the tutorial exercises, one needs a laptop with Miniconda (a minimal version of Anaconda) and Ludwig installed.
@@ -18,7 +20,6 @@ After that, type:
 ```bash
 conda --help
 ```
-and read the manual.
 
 ## Check-out the git repository with the exercise
 Once Miniconda is ready, checkout the tutorial repo and proceed with setting up the environment:
@@ -27,6 +28,19 @@ git clone https://github.com/ASvyatkovskiy/ludwig-intro
 ```
 
 ## Create isolated Miniconda environment
+
+Copy following into a file named `environment.yaml`:
+
+```yaml
+name: hello-ludwig
+channels:
+  - conda-forge
+dependencies:
+  - python=3.6
+  - ludwig
+  - jupyter
+```
+
 Change into the course folder, then type:
 
 ```bash
